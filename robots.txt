@@ -1,0 +1,57 @@
+# robots.txt for Guangzhou Chengzou Trading Co., Ltd.
+# https://gzchengzou.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://gzchengzou.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Block common bot traps
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Allow important resources
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /images/logo.svg
+
+# Disallow legal pages from search indexing (optional - they may still appear)
+# Uncomment if you don't want these in search results
+# Disallow: /privacy.html
+# Disallow: /terms.html
+
+# User-agent specific rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block malicious bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
